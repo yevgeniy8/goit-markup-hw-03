@@ -259,6 +259,8 @@ header {
 .team-card .team-img {
 	display: block;
 	margin-bottom: 30px;
+	max-width: 100%;
+	height: auto;
 }
 
 .team-card .team-title {
@@ -348,6 +350,8 @@ header {
 
 .project .project-img {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .project-content {
