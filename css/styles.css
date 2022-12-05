@@ -56,6 +56,19 @@ p {
 	/* outline: 2px solid tomato; */
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 header {
 	border-bottom: 1px solid #ECECEC;
 }
@@ -145,12 +158,18 @@ header {
 /* Hero */
 
 .hero {
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	background-color: var(--secondary-background-color);
 	text-align: center;
 }
 
 .hero-title {
+	margin-bottom: 30px;
+
 	color: var(--title-text-color);
-	background-color: var(--secondary-background-color);
+	/* background-color: var(--secondary-background-color); */
 
 	font-weight: 900;
 	font-size: 44px;
@@ -210,6 +229,10 @@ header {
 .feature-list {
 	display: flex;
 	gap: 30px;
+}
+
+.feature-list .feature-item {
+	width: 270px;
 }
 
 .feature-list .feature-title {
@@ -322,7 +345,7 @@ header {
 	display: flex;
 	gap: 8px;
 	justify-content: center;
-	margin-bottom: 34px;
+	margin-bottom: 50px;
 }
 
 .filters .filters-button {
